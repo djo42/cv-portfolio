@@ -12,7 +12,7 @@ export default function App() {
           <h3>
             Automotive & Mobility Industry Expert | Franchise | Consulting
           </h3>
-          <p>Please contact me by email: dennis@john.international</p>
+          <p>dennis@john.international</p>
         </div>
       </main>
     </>
