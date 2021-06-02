@@ -1,7 +1,7 @@
 import './styles.scss'
 import React from 'react'
-import Buttoninput from './components/buttoninput.js'
-
+// import Buttoninput from './components/buttoninput.js'
+// import Businesscard from './components/businesscard.js'
 export default function App() {
   return (
     <>
@@ -12,9 +12,7 @@ export default function App() {
           <h3>
             Automotive & Mobility Industry Expert | Franchise | Consulting
           </h3>
-        </div>
-        <div>
-          <Buttoninput />
+          <p>Please contact me by email: dennis@john.international</p>
         </div>
       </main>
     </>

@@ -7,8 +7,6 @@ $dot-color: rgb(105, 103, 99);
 $dot-size: 1px;
 $dot-space: 22px;
 
-
-
 .outer {
   display: table;
   position: absolute;
@@ -30,10 +28,8 @@ $dot-space: 22px;
   /* Whatever width you want */
 }
 
-
-
-
 body {
+  padding: 10px;
   text-align: center;
   font-family: 'Raleway';
   background: linear-gradient(
@@ -47,7 +43,20 @@ body {
   background-size: $dot-space $dot-space;
 }
 
+.business-card {
+  display: inline-flex;
+  background-color: white;
+  opacity: 50%;
+  width: auto;
+  color: green;
+  border-radius: 10px;
+}
 
+p {
+  display: inline;
+  background-color: none;
+  color: white;
+}
 
 input {
   border: none;
