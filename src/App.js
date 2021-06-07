@@ -11,7 +11,7 @@ export default function App() {
           <h1>Dennis John</h1>
           <h3>
             Business Development | Strategy & Expansion | Automotive | Digital
-            Business Models
+            Solutions
           </h3>
           <p>dennis@john.international</p>
         </div>
