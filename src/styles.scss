@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono:ital,wght@0,100;0,400;0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=Noto+Serif+KR:wght@500&family=Roboto+Mono&family=Special+Elite&display=swap');
 // Colors
 $bg-color: rgb(10, 10, 10);
 $dot-color: rgb(105, 103, 99);
+//$base-font: 'Roboto Mono', monospace;
+$base-font:'Inria Sans', sans-serif;
 
 // Dimensions
 $dot-size: 1px;
@@ -31,38 +34,51 @@ $dot-space: 22px;
 body {
   padding: 10px;
   text-align: center;
-  font-family: 'Raleway';
-  background: linear-gradient(
-        90deg,
-        $bg-color ($dot-space - $dot-size),
-        transparent 1%
-      )
-      center,
-    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    $dot-color;
-  background-size: $dot-space $dot-space;
+  font-family: $base-font;
+  background: url(./resources/248539.jpg) no-repeat center center fixed;
+  background-size: cover;
+  // background: linear-gradient(
+  //       90deg,
+  //       $bg-color ($dot-space - $dot-size),
+  //       transparent 1%
+  //     )
+  //     center,
+  //   linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+  //   $dot-color;
+  // background-size: $dot-space $dot-space;
 }
 
 .business-card {
-  display: inline-flex;
-  background-color: white;
-  opacity: 50%;
+  font-family: $base-font;
+  display: block;
+  // background-color: white;
+  // opacity: 50%;
   width: auto;
-  color: green;
+  color: black;
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.33);
+  backdrop-filter: blur(20px);
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(43, 42, 42, 0.66);
+}
+
+h1 {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 p {
+  font-family: $base-font;
   display: inline;
   background-color: none;
-  color: white;
+  color: black;
 }
 
 input {
   border: none;
   outline: 0 none;
   display: inline-flex;
-  font-family: 'Raleway';
+  font-family: $base-font;
   font-size: 14pt;
   color: grey;
   background: $bg-color;
@@ -75,7 +91,7 @@ input {
 
 label {
   display: inline-flex;
-  font-family: 'Raleway';
+  font-family: $base-font;
   font-size: 14pt;
   background: $bg-color;
   border-radius: 8px;
@@ -98,7 +114,7 @@ button {
   padding-left: 8px;
   padding-right: 8px;
   border-style: solid;
-  font-family: 'Raleway';
+  font-family: $base-font;
   font-weight: normal;
   display: inline-block;
   background: white;

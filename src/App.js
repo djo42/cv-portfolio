@@ -7,7 +7,7 @@ export default function App() {
     <>
       <header></header>
       <main>
-        <div className="App">
+        <div className="business-card">
           <h1>Dennis John</h1>
           <h3>
             Automotive & Mobility Industry Expert | Franchise | Consulting
