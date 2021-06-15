@@ -10,8 +10,7 @@ export default function App() {
         <div className="business-card">
           <h1>Dennis John</h1>
           <h3>
-            Business Development | Strategy & Expansion | Automotive | Digital
-            Solutions
+            Business Development | Strategy & Expansion | Digital Solutions
           </h3>
           <p>dennis@john.international</p>
         </div>
