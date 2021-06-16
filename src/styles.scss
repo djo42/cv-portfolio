@@ -32,6 +32,7 @@ $dot-space: 22px;
 }
 
 body {
+  display: grid;
   padding: 10px;
   text-align: center;
   font-family: $base-font;
@@ -48,12 +49,38 @@ body {
   // background-size: $dot-space $dot-space;
 }
 
+:root {
+  --length: 0;
+  --lengthkey: 0ch;
+}
+
+.animated-text {
+  display: flex;
+  //font-family: monospace;
+  text-align: center;
+  overflow: hidden;
+  height: 1.1em;
+  word-wrap: break-word;
+  white-space: nowrap;
+  animation: typing 6s steps(var(--length)) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: var(--lengthkey);
+  }
+}
+
 .business-card {
   font-family: $base-font;
   display: block;
   // background-color: white;
   // opacity: 50%;
-  width: auto;
+  width: 100%;
   color: black;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.33);
